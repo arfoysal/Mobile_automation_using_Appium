@@ -19,15 +19,11 @@ public class Utilities {
 		int scrollStart = (int) (dimension.getHeight() * d);
 		int scrollEnd = (int) (dimension.getHeight() * e);
 
-<<<<<<< HEAD
+
 		new TouchAction<>((PerformsTouchActions) PageDriver.getCurrentDriver())
 				.press(PointOption.point(0, scrollStart))
 				.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
 				.moveTo(PointOption.point(0, scrollEnd))
-=======
-		new TouchAction<>((PerformsTouchActions) PageDriver.getCurrentDriver()).press(PointOption.point(0, scrollStart))
-				.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1))).moveTo(PointOption.point(0, scrollEnd))
->>>>>>> b360e5f4bd473cec51c3aef670c12acd24aeeb51
 				.release().perform();
 	}
 
